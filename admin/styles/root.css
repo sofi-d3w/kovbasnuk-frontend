@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f7f3ed;
+    color: #4a4238;
+}
+
+button {
+    background-color: #d9c5b2;
+    padding: 8px 12px;
+    min-width: 240px;
+    border-radius: 12px;
+    color: #3e332a;
+    font-size: 17px;
+    height: 46px;
+    cursor: pointer;
+}
+
+#admin-root {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    min-height: 100dvh;
+}
+
+@media (max-width:768px) {
+    #admin-root {
+        grid-template-columns: 1fr;
+    }
+}

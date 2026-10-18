@@ -1,0 +1,44 @@
+.content {
+    padding: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+@media (max-width:768px) {
+    .content {
+        padding: 24px 12px;
+    }
+}
+
+.content__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #3e332a;
+}
+
+@media (max-width:768px) {
+    .content__header h1 {
+        font-size: 20px;
+    }
+}
+
+.content__header button {
+    width: fit-content;
+    min-width: auto;
+    padding: 0 36px;
+}
+
+@media (max-width:768px) {
+    .content__header button {
+        padding: 0 16px;
+        font-size: 14px;
+    }
+}
+
+.content__wrapper {
+    padding-top: 30px;
+}

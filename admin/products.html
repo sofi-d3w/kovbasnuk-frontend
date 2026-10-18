@@ -4,42 +4,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/admin/styles/index.css">
+    <link rel="stylesheet" href="/admin/styles/root.css">
     <link rel="stylesheet" href="/admin/styles/products.css">
+    <link rel="stylesheet" href="/admin/styles/sidebar.css">
+    <link rel="stylesheet" href="/admin/styles/content.css">
     <title>Document</title>
 </head>
 
 <body>
-
     <div id="admin-root">
+        <header>
+            <div class="header__logo">KB Admin</div>
+            <button class="header__btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </header>
         <aside class="sidebar">
             <div class="sidebar__logo">
                 Kovbasnuk Admin Panel
             </div>
             <nav class="sidebar__menu">
                 <a href="/admin/index.html">Дашборд</a>
-                <a href="/admin/products.html">Продукти</a>
+                <a class="sidebar__menu-active" href="/admin/products.html">Продукти</a>
                 <a href="/admin/category.html">Категорії</a>
             </nav>
-            <nav class="sidebar__admin">
-                <div class="sidebar__admin-info">
-                    Admin Name
-                </div>
-                <button>
+
+            <div class="sidebar__admin">
+                <button class="sidebar__admin-logout">
                     Вийти
                 </button>
-            </nav>
+            </div>
         </aside>
 
-        <main>
-            <div class="products">
+        <main class="content">
+            <div class="content__header">
+                <h1>Список продуктів</h1>
+                <button class="content__header-create">+ Додати</button>
+            </div>
 
+            <div class="content__wrapper">
+                <section class="products">
+                    <div class="products__item">
+                        <img src="/admin/image.png" alt="photo">
+                        <h2>Курячі крилишка</h2>
+                        <span class="products__item-info">Гарячі кришишка барбекю</span>
+                        <div class="products__item-bottom">
+                            <span class="products__item-price">800 грн</span>
+                            <span class="products__item-counts">100 грам</span>
+                        </div>
+                        <a href="">Детальніше &rarr;</a>
+                    </div>
+                    <div class="products__item">
+                        <img src="/admin/image.png" alt="photo">
+                        <h2>Курячі крилишка</h2>
+                        <span class="products__item-info">Гарячі кришишка барбекю</span>
+                        <div class="products__item-bottom">
+                            <span class="products__item-price">800 грн</span>
+                            <span class="products__item-counts">100 грам</span>
+                        </div>
+                        <a href="">Детальніше &rarr;</a>
+                    </div>
+                    <div class="products__item">
+                        <img src="/admin/image.png" alt="photo">
+                        <h2>Курячі крилишка</h2>
+                        <span class="products__item-info">Гарячі кришишка барбекю</span>
+                        <div class="products__item-bottom">
+                            <span class="products__item-price">800 грн</span>
+                            <span class="products__item-counts">100 грам</span>
+                        </div>
+                        <a href="">Детальніше &rarr;</a>
+                    </div>
+                    <div class="products__item">
+                        <img src="/admin/image.png" alt="photo">
+                        <h2>Курячі крилишка</h2>
+                        <span class="products__item-info">Гарячі кришишка барбекю</span>
+                        <div class="products__item-bottom">
+                            <span class="products__item-price">800 грн</span>
+                            <span class="products__item-counts">100 грам</span>
+                        </div>
+                        <a href="">Детальніше &rarr;</a>
+                    </div>
+                    <div class="products__item">
+                        <img src="/admin/image.png" alt="photo">
+                        <h2>Курячі крилишка</h2>
+                        <span class="products__item-info">Гарячі кришишка барбекю</span>
+                        <div class="products__item-bottom">
+                            <span class="products__item-price">800 грн</span>
+                            <span class="products__item-counts">100 грам</span>
+                        </div>
+                        <a href="">Детальніше &rarr;</a>
+                    </div>
+                    <div class="products__item">
+                        <img src="/admin/image.png" alt="photo">
+                        <h2>Курячі крилишка</h2>
+                        <span class="products__item-info">Гарячі кришишка барбекю</span>
+                        <div class="products__item-bottom">
+                            <span class="products__item-price">800 грн</span>
+                            <span class="products__item-counts">100 грам</span>
+                        </div>
+                        <a href="">Детальніше &rarr;</a>
+                    </div>
+                    <div class="products__item">
+                        <img src="/admin/image.png" alt="photo">
+                        <h2>Курячі крилишка</h2>
+                        <span class="products__item-info">Гарячі кришишка барбекю</span>
+                        <div class="products__item-bottom">
+                            <span class="products__item-price">800 грн</span>
+                            <span class="products__item-counts">100 грам</span>
+                        </div>
+                        <a href="">Детальніше &rarr;</a>
+                    </div>
+                </section>
             </div>
         </main>
     </div>
 
     <script src="/admin/scripts/verify.js" type="module"></script>
     <script src="/admin/scripts/products.js" type="module"></script>
+    <script src="/admin/scripts/sidebar.js"></script>
+
 </body>
 
 </html>
