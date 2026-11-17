@@ -5,6 +5,10 @@
 
 }
 
+.products.hidden {
+    opacity: 0;
+}
+
 @media (max-width:941px) {
     .products {
         display: grid;
@@ -27,7 +31,10 @@
 }
 
 @media (max-width:768px) {
-    font-size: 14px;
+    .products__item h2 {
+        font-size: 14px;
+    }
+
 
 }
 

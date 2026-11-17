@@ -4,12 +4,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/admin/styles/root.css">
+    <link rel="stylesheet" href="/admin/styles/index.css">
+    <link rel="stylesheet" href="/admin/styles/sidebar.css">
+    <link rel="stylesheet" href="/admin/styles/content.css">
     <title>Document</title>
 </head>
 
 <body>
-    <h1>Admin</h1>
+    <div id="admin-root">
+        <header>
+            <div class="header__logo">KB Admin</div>
+            <button class="header__btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </header>
+        <aside class="sidebar">
+            <div class="sidebar__logo">
+                Kovbasnuk Admin Panel
+            </div>
+            <nav class="sidebar__menu">
+                <a class="sidebar__menu-active" href="/admin/index.html">Дашборд</a>
+                <a href="/admin/products.html">Продукти</a>
+                <a href="/admin/category.html">Категорії</a>
+            </nav>
+
+            <div class="sidebar__admin">
+                <button class="sidebar__admin-logout">
+                    Вийти
+                </button>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="content__header">
+                <h1>Дашборд</h1>
+            </div>
+
+            <div class="content__wrapper">
+
+                <a href="/admin/products.html" class="dashboard-card">
+                    <div>
+                        <h2>Продукти</h2>
+                        <p>Усі продукти</p>
+                    </div>
+                    <span id="productsCount">0</span>
+                </a>
+
+                <a href="/admin/category.html" class="dashboard-card">
+                    <div>
+                        <h2>Категорії</h2>
+                        <p>Усі категорії</p>
+                    </div>
+                    <span id="categoriesCount">0</span>
+                </a>
+
+            </div>
+
+    </div>
+    </main>
+    </div>
+
     <script src="/admin/scripts/verify.js" type="module"></script>
+    <script src="/admin/scripts/index.js" type="module"></script>
+    <script src="/admin/scripts/sidebar.js"></script>
+
 </body>
 
 </html>

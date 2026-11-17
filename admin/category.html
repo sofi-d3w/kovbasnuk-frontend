@@ -4,12 +4,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/admin/styles/root.css">
+    <link rel="stylesheet" href="/admin/styles/sidebar.css">
+    <link rel="stylesheet" href="/admin/styles/content.css">
+    <link rel="stylesheet" href="/admin/styles/category.css">
     <title>Document</title>
 </head>
 
 <body>
-    <h1>Admin Category</h1>
+    <div id="admin-root">
+        <header>
+            <div class="header__logo">KB Admin</div>
+            <button class="header__btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </header>
+        <aside class="sidebar">
+            <div class="sidebar__logo">
+                Kovbasnuk Admin Panel
+            </div>
+            <nav class="sidebar__menu">
+                <a href="/admin/index.html">Дашборд</a>
+                <a href="/admin/products.html">Продукти</a>
+                <a class="sidebar__menu-active" href="/admin/category.html">Категорії</a>
+            </nav>
+
+            <div class="sidebar__admin">
+                <button class="sidebar__admin-logout">
+                    Вийти
+                </button>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="content__header">
+                <h1>Список категорій</h1>
+                <button class="content__header-create">+ Додати</button>
+            </div>
+
+            <div class="content__wrapper">
+                <section class="api-message">
+                    <p>Загрузка...</p>
+                </section>
+                <section class="category hidden">
+
+                </section>
+            </div>
+
+        </main>
+    </div>
+
     <script src="/admin/scripts/verify.js" type="module"></script>
+    <script src="/admin/scripts/category.js" type="module"></script>
+    <script src="/admin/scripts/sidebar.js"></script>
+
 </body>
 
 </html>
