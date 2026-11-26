@@ -86,3 +86,30 @@
 .category__item a:hover {
     opacity: 1;
 }
+
+.category-create {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.category-create h2 {
+    margin-bottom: 12px;
+}
+
+.category-create button {
+    margin-top: 12px;
+}
+
+.category-create input {
+    height: 40px;
+    font-size: 17px;
+    padding: 0 8px;
+}
+
+.category-create textarea {
+    height: 80px;
+    font-size: 17px;
+    padding: 8px;
+    resize: none;
+}

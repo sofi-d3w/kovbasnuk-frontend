@@ -30,5 +30,6 @@ button {
 @media (max-width:768px) {
     #admin-root {
         grid-template-columns: 1fr;
+        min-height: auto;
     }
 }
